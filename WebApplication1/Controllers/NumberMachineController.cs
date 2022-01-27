@@ -9,12 +9,13 @@ namespace WebApplication1.Controllers
 {
     public class NumberMachineController : ApiController
     {
+        //--------------- 5
    
         // GET api/numbermachine/5
         public int Get(int id)
         {
-            //this takes a number and do * , /, + , - operations on same number and then outputs the result
-            int result = id * id / id + id - id;
+            //this takes a number and do * , /, + , - operations the number and then outputs the result
+            int result = ((id * id + id) / id) - id;
             return result;
         }
 
